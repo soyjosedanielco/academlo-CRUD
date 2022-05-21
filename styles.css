@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+}
+.max-width {
+    max-width: 75%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.add-product {
+    width: 40%;
+    border: solid 1px #f6f3f3;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#f9fafc;
+}
+
+#addImg, #addName, #addPrice, #editImg, #editName, #editPrice {
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+#addName, #addPrice, #editName, #editPrice {
+    margin-top: 5px;
+}
+
+.add-product__button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #274671;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.add-product__info{
+    display: flex;
+    flex-direction: column;
+}
+
+.products-container {
+    display: inline-flex;
+    justify-content: center; /* no es la mejor forma de centrar pero fue la que encontré*/
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.product-card {
+    width: 20%;
+    max-height: max-content ;
+    margin: 15px 15px 0px;
+    border: solid 1px #f6f3f3;
+    border-radius: 5px; 
+}
+
+.product-card:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-info {
+    padding: 8px;
+    background-color:#f9fafc;
+}
+
+.product-price {
+    text-align: end;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+.button-edit {
+    border: none;
+    border-radius: 3px;
+    font-size: 15px;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.delete-product {
+    background-color: #eb4a5a;
+    margin-right: 5px;
+}
+
+.edit-product {
+    background-color: #274671;
+}
